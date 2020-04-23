@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formulario Validado</title>
+</head>
+<body>
+	<h1>Formulario</h1>
+	<form method="post" th:action="@{/validar}">
+	
+		<label>Nombres: <input type="text" placeholder="Mario Isaac" name="name"></label><br>
+		<label>Apellidos: <input type="text" placeholder="Lopez Guevara" name="last"></label><br>
+		<label>Fecha de nacimiento: <input type="date" name="birthdate"></label><br>
+		<label>Lugar de nacimiento: <input type="text" placeholder="San Salvador" name="birthplace"></label><br>
+		<label>Instituto: <input type="text" placeholder="Colegio Santa Cecilia" name="school"></label><br>
+		<label>Teléfono fijo: <input type="text" placeholder="22222222" name="phone"></label><br>
+		<label>Teléfono móvil: <input type="text" placeholder="77777777" name="cell"></label><br>
+		
+		<input type="submit" value="Guardar alumno">
+	
+	</form>
+</body>
+</html>
